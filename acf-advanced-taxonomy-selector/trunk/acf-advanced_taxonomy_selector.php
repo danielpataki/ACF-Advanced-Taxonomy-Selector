@@ -4,7 +4,7 @@
 Plugin Name: Advanced Custom Fields: Advanced Taxonomy Selector
 Plugin URI: https://github.com/danielpataki/ACF-Advanced-Taxonomy-Selector
 Description: A field for Advanced Custom Fields which allows you to create a field where users can select terms or taxonommies flexibly.
-Version: 3.0.0
+Version: 3.1.0
 Author: Daniel Pataki
 Author URI: http://danielpataki.com
 License: GPLv2 or later
