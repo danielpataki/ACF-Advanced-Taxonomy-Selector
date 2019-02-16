@@ -1,7 +1,7 @@
 /* TEAM */
 
 Name: Daniel Pataki
-Title: Founding Developer
+Title: Developer
 Twitter: danielpataki
 
 /* THANKS */
@@ -14,11 +14,15 @@ Name: Elliot Condon
 Website: http://www.elliotcondon.com/
 For: Making Advanced Custom Fields
 
-Name: Muhamad Ulum
-Website: https://www.iconfinder.com/oelhoem
+Name: Jaka Permadi
+Website: https://www.iconfinder.com/jakapermadi
 For: The plugin icon
 
+Name: Benjamin Voros
+Website: https://unsplash.com/@vorosbenisop
+For: The plugin photo
+
 /* META */
-Updated: 2015/04/22
+Updated: 2019/02/16
 Software: WordPress
 See: http://humanstxt.org/

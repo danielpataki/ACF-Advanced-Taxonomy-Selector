@@ -2,7 +2,7 @@
 Contributors: danielpataki
 Tags: selector, fonts, google
 Requires at least: 3.5
-Tested up to: 4.2
+Tested up to: 5.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -20,7 +20,8 @@ This ACF field type is compatible with both *ACF 4* and *ACF 5*.
 = Thanks =
 
 * [Advanced Custom Fields](http://www.advancedcustomfields.com/) for the awesome base plugin.
-* [Muhamad Ulum](https://www.iconfinder.com/oelhoem) for the T icon.
+* [Jaka Permadi](https://www.iconfinder.com/jakapermadi) for the tag icon.
+* [Benjamin Voros](https://unsplash.com/@vorosbenisop) for the awesome photo.
 
 
 == Installation ==
@@ -40,8 +41,12 @@ Installing this plugin automatically is the easiest option. You can install the 
 
 1. ACF control for field creation
 2. The user-facing taxonomy settings
+3. Selecting terms from multiple taxonomies
 
 == Changelog ==
+
+= 3.1.0 (2015-04-21) =
+* Tested up to WordPress 5.1
 
 = 3.0.0 (2015-04-21) =
 * Updated for WordPress 4.2
