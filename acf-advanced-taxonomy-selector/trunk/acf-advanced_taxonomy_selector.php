@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 // Include Common Functions
-include( 'functions.php' );
+include dirname( __FILE__ ) . '/functions.php';
 
 
 add_action('plugins_loaded', 'acfatf_load_textdomain');
@@ -41,7 +41,7 @@ add_action('acf/include_field_types', 'include_field_types_advanced_taxonomy_sel
  *
  */
 function include_field_types_advanced_taxonomy_selector( $version ) {
-	include_once('acf-advanced_taxonomy_selector-v5.php');
+	include_once dirname( __FILE__ ) . '/acf-advanced_taxonomy_selector-v5.php';
 }
 
 
@@ -56,7 +56,7 @@ add_action('acf/register_fields', 'register_fields_advanced_taxonomy_selector');
  *
  */
 function register_fields_advanced_taxonomy_selector() {
-	include_once('acf-advanced_taxonomy_selector-v4.php');
+	include_once dirname( __FILE__ ) . '/acf-advanced_taxonomy_selector-v4.php';
 }
 
 
