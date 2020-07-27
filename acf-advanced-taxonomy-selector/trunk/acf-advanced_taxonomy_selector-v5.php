@@ -189,9 +189,10 @@ class acf_field_advanced_taxonomy_selector extends acf_field {
 			?>
 				<optgroup label='<?php echo $taxonomy->label ?>'>
 					<?php
-						$terms = get_terms( $taxonomy->name, array( 'hide_empty' => false ) );
-						foreach( $terms as $term ) :
-							$selected = ( !empty( $field['value'] ) && in_array( $taxonomy->name . '_' . $term->term_id, $field['value'] ) ) ? 'selected="selected"' : '';
+                        $terms = get_terms( $taxonomy->name, array( 'hide_empty' => false ) );
+                        foreach( $terms as $term ) :
+                            $field_value = is_string($field['value']) ? array($field['value']) : $field['value'];
+							$selected = ( !empty( $field['value'] ) && in_array( $taxonomy->name . '_' . $term->term_id, $field_value ) ) ? 'selected="selected"' : '';
 					?>
 						<option <?php echo $selected ?> value='<?php echo $taxonomy->name ?>_<?php echo $term->term_id ?>'><?php echo $term->name ?></option>
 					<?php endforeach ?>
@@ -225,8 +226,9 @@ class acf_field_advanced_taxonomy_selector extends acf_field {
 				<option><?php _e( 'No Taxonomies Exist For This Post Type', 'acf-advanced_taxonomy_selector' ) ?></option>
 
 			<?php else :
-				foreach( $taxonomies as $taxonomy ) :
-					$selected = ( !empty( $field['value'] ) && in_array( $taxonomy->name, $field['value'] ) ) ? 'selected="selected"' : '';
+                foreach( $taxonomies as $taxonomy ) :
+                    $field_value = is_string($field['value']) ? array($field['value']) : $field['value'];
+					$selected = ( !empty( $field['value'] ) && in_array( $taxonomy->name, $field_value ) ) ? 'selected="selected"' : '';
 			?>
 				<option <?php echo $selected ?> value='<?php echo $taxonomy->name ?>'><?php echo $taxonomy->label ?></option>
 			<?php endforeach ?>
